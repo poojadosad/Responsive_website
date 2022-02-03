@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* logo */
+ .logo img{
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 33px;
+    height: 33px;
+
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color:#021420;
+    
+  
+}
+
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+     
+}
+
+.nav-list li{
+    list-style-type: none;
+    padding: 26px 30px;
+
+}
+
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+.nav-list li a:hover {
+color: rgb(231, 223, 114);
+
+} 
+
+.rightNav{
+    width: 30%;
+    padding: 0 23px;
+    
+
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    width: 60%;
+}
+
+.hamburger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15%;
+
+}
+
+.line{
+    width: 30px;
+    background-color: white;
+    height: 4px;
+    margin: 6px;
+}
+
+
+.background{
+    background: rgba(0,0,0,0.7) url("../assets/bgimage.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondHalf {
+    width:30%;
+}
+
+.secondHalf img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 4px;
+
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+
+.text-big{
+    font-size: 30px;
+    margin-bottom: 8px;
+
+}
+
+.text-small{
+    font-size: 18px;
+    margin-bottom: 24px;
+
+
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 2px solid  white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    margin: 5px 3px;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    vertical-align: middle;
+    margin-top: auto;
+    width: 30%;
+    float: right;
+
+}
+
+.secSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    height: 100%;
+    margin: auto;
+    
+
+}
+.secSmallText{
+    color: grey;
+}
+
+.secBox{
+    padding:   5%;
+}
+
+.secondSecImg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.secBigText{
+    font-size:36px;
+}
+
+.secondSecImg img{
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+ .reverse{
+     flex-direction: row-reverse;
+     padding-left: 5%;
+ }
+
+ .hr{
+    border-top: 1px solid rgb(231, 223, 223);
+ }
+
+
+ .text-center{
+     text-align: center;
+     padding-top: 12px;
+ }
+
+ .form{
+     max-width: 500px;
+     margin: auto;
+ }
+
+ #input-form {
+     width: 100%;
+     font-size: 18px;
+     border: 2px solid grey;
+     border-radius: 6px;
+     margin: 8px 0;
+     padding: 8px 6px;
+
+ }
+
+ .btn-dark{
+     color: black;
+     font-weight: 500;
+     border: 2px solid rgb(39, 34, 34);
+     margin-bottom: 16px;
+ }
+
+ .footer{
+     background-color:#021420;
+     color: white;
+     text-align: center;
+     padding: 16px 0;
+ }
+
+
+ @media only screen and (max-width:990px){
+
+    #search{
+        padding: 5px;
+        font-size: 14px;
+        }
+
+    .text-big{
+        font-size: 24px;
+        margin-bottom: 8px;
+        } 
+
+  
+        
+    .secSmallText{
+        font-size: 14px;
+    }
+    
+    #input-form {
+        font-size: 16px;
+
+        padding: 6px 4px;
+   
+    }
+    .textS{
+        margin-bottom: 8px;
+    }
+
+    .btn{
+        padding: 6px 12px ;
+    }
+
+    .secondSecImg img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .btn-sm{
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+        
+ }
+
+
+
+ @media only screen and (max-width:866px){
+     .nav-list{
+         width: 80%;
+     }
+
+     .rightNav{
+         width: 20%;
+     }
+
+     #search{
+        padding: 5px;
+        font-size: 12px;
+         width: 45%;
+        }
+
+    .btn-sm{
+        padding: 4px 0px;
+        font-size: 10px;
+        width: 35%;
+    }
+ }
+
+ @media only screen and (max-width:753px){
+     .hamburger{
+         display: block;
+         position: absolute;
+         right: 3%;
+         top: 5%
+     }
+
+     .logo{
+         position: absolute;
+         left: -3%;
+         top: 5%;
+     }
+
+     .navbar{
+         flex-direction: column;
+         height:400px ;
+     }
+
+     .right-nav{
+         flex-direction: column;
+
+     }
+     .nav-list{
+         flex-direction: column;
+     }
+
+     #search{
+        padding: 5px;
+        font-size: 12px;
+        width: 100%;
+        }
+
+    .btn-sm{
+        padding: 4px 6px;
+        font-size: 12px;
+        margin-top: 5%;
+        width: 80%;
+    }
+    .rightNav{
+        align-items: center;
+    }
+
+    .resBackground{
+        background-color:#021420;
+    }
+
+    .firstSection {
+        height: 60vh;
+    }
+
+
+    .text-big{
+        font-size: 22px;
+        margin-bottom: 8px;
+        text-align: center;
+        } 
+        
+    .secSmallText{
+        font-size: 18px;
+    }
+
+    .secondSecImg img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .h-navResp{
+        height: 50px;
+    }
+
+    .v-classResp{
+        opacity: 0;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .textS{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+
+    
+
+    .secSection{
+        flex-direction: column-reverse;
+        padding: 16px 0;
+    }
+
+    .text-small{
+        font-size: 16px;
+    }
+
+    .text-center{
+        font-size: 18px;
+    }
+
+    .form{
+        max-width: 300px;
+    }
+
+ }
+
+
+
+
+ 
+    
+    
